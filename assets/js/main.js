@@ -185,7 +185,7 @@
     var X = window.EXPERIENCE || [];
     if (!X.length) { root.style.display = "none"; return; }
     root.innerHTML = X.map(function (x) {
-      return '<div class="card" style="margin:1rem 0"><h3>' + esc(x.role) + "</h3><p><strong>" + esc(x.org || "") + "</strong>" + (x.period ? " · " + esc(x.period) : "") + "</p>" +
+      return '<div class="card" style="margin:1rem 0"><h3>' + esc(x.role) + "</h3>" + (x.org || x.period ? "<p>" + (x.org ? "<strong>" + esc(x.org) + "</strong>" : "") + (x.org && x.period ? " · " : "") + esc(x.period || "") + "</p>" : "") +
         (x.details ? '<div class="prose">' + md(x.details) + "</div>" : "") +
         (x.tools && x.tools.length ? '<div class="meta-row" style="margin-top:.8rem">' + x.tools.map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" : "") + "</div>";
     }).join("");
