@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+
+# Replace with your real domain once deployed:
+Sitemap: https://YOUR-DOMAIN/sitemap.xml

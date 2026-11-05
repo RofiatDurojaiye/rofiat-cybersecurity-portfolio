@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin | Durojaiye Rofiat Titilayo</title>
+  <meta name="theme-color" content="#080D1B">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <header class="site-header"><div class="container nav">
+    <a class="brand" href="index.html"><span class="monogram" aria-hidden="true">RD</span><span class="brand-name">Site admin<small>Update your portfolio, no coding</small></span></a>
+    <a class="btn btn-ghost btn-sm" href="index.html">View site</a>
+  </div></header>
+
+  <main class="container adm-main">
+    <section class="card adm-connect" aria-labelledby="conn-h">
+      <h2 id="conn-h">1. Connect to your site</h2>
+      <p class="adm-note">This lets the page save your changes to your site's GitHub repository. You only do it once on each device. Your token is kept in this browser only and is never put on the website.</p>
+      <div class="adm-grid">
+        <div class="field"><label for="c-repo">Repository (owner/name)</label><input id="c-repo" placeholder="your-username/rofiat-portfolio" autocomplete="off"></div>
+        <div class="field"><label for="c-branch">Branch</label><input id="c-branch" value="main" autocomplete="off"></div>
+        <div class="field"><label for="c-token">GitHub token</label><input id="c-token" type="password" autocomplete="off" placeholder="github_pat_..."></div>
+      </div>
+      <label class="adm-check"><input type="checkbox" id="c-remember" checked> Remember me on this device</label>
+      <div class="btn-row"><button class="btn btn-primary btn-sm" id="connect" type="button">Connect</button></div>
+      <div id="c-status" class="adm-status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="edit-h">
+      <h2 id="edit-h" style="margin-top:2.5rem">2. Edit your content</h2>
+      <div class="adm-tabs" role="tablist" aria-label="Content type">
+        <button role="tab" data-tab="projects" aria-selected="true" type="button">Projects</button>
+        <button role="tab" data-tab="articles" aria-selected="false" type="button">Articles</button>
+        <button role="tab" data-tab="learning" aria-selected="false" type="button">Learning journey</button>
+        <button role="tab" data-tab="experience" aria-selected="false" type="button">About: experience</button>
+        <button role="tab" data-tab="settings" aria-selected="false" type="button">Site settings</button>
+      </div>
+      <div id="panel"></div>
+      <div id="editor"></div>
+    </section>
+  </main>
+
+  <div class="adm-publish">
+    <div class="container adm-publish-row">
+      <div><span id="dirty" class="badge placeholder" hidden>Unpublished changes</span> <span id="pub-status" class="adm-status" role="status" aria-live="polite"></span></div>
+      <div class="adm-row"><button class="btn btn-ghost btn-sm" id="download" type="button">Download backup</button><button class="btn btn-primary" id="publish" type="button">Publish changes</button></div>
+    </div>
+  </div>
+
+  <script src="data/site-data.js"></script>
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
