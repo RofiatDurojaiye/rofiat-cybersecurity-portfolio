@@ -1,6 +1,6 @@
 window.SITE_DATA = {
   "config": {
-    "github": ""
+    "github": "https://github.com/RofiatDurojaiye"
   },
   "projects": [
     {
