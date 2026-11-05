@@ -18,7 +18,7 @@ window.CONFIG = {
      The FIRST message sent triggers an activation email to that inbox. Click the
      confirm link once and every later message arrives normally. */
   formEndpoint: "https://formsubmit.co/ajax/teetee.duro@gmail.com",
-  siteUrl: "",                     // e.g. "https://username.github.io/rofiat-portfolio"
+  siteUrl: "https://rofiatdurojaiye.github.io/rofiat-cybersecurity-portfolio",                     // e.g. "https://username.github.io/rofiat-portfolio"
   portrait: "assets/img/portrait.jpg",
   portraitAlt: "Portrait of Durojaiye Rofiat Titilayo, Cybersecurity Analyst"
 };

@@ -53,8 +53,7 @@
       '<a class="brand" href="index.html" aria-label="' + esc(C.name) + ', home"><span class="monogram" aria-hidden="true">' + esc(C.initials) + '</span><span class="brand-name">' + esc(C.name.split(" ").slice(0, 2).join(" ")) + "<small>Cybersecurity Analyst</small></span></a>" +
       '<nav aria-label="Primary"><ul class="nav-links" id="nav-links">' + links + "</ul></nav>" +
       '<div class="nav-actions">' + (C.resumeUrl ? ext(C.resumeUrl, "Resume", "btn btn-ghost btn-sm") : "") +
-      '<a class="btn btn-primary btn-sm" href="contact.html">Contact</a>' +
-      '<button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>' +
+            '<button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>' +
       "</div></header>";
     var btn = $("#menu-btn"), ul = $("#nav-links");
     btn.addEventListener("click", function () { var o = ul.classList.toggle("open"); btn.setAttribute("aria-expanded", o); });

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace YOUR-DOMAIN with your real domain after deploying. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR-DOMAIN/index.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN/about.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN/projects.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN/learning.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN/insights.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN/contact.html</loc></url>
+  <url><loc>https://rofiatdurojaiye.github.io/rofiat-cybersecurity-portfolio/index.html</loc></url>
+  <url><loc>https://rofiatdurojaiye.github.io/rofiat-cybersecurity-portfolio/about.html</loc></url>
+  <url><loc>https://rofiatdurojaiye.github.io/rofiat-cybersecurity-portfolio/projects.html</loc></url>
+  <url><loc>https://rofiatdurojaiye.github.io/rofiat-cybersecurity-portfolio/learning.html</loc></url>
+  <url><loc>https://rofiatdurojaiye.github.io/rofiat-cybersecurity-portfolio/insights.html</loc></url>
+  <url><loc>https://rofiatdurojaiye.github.io/rofiat-cybersecurity-portfolio/contact.html</loc></url>
 </urlset>
